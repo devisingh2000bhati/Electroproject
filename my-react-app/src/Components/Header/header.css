@@ -1,0 +1,281 @@
+.navbar {
+  background-color: #fdfdfd;
+  color: #030303;
+  padding: 10px 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.icons {
+  display: flex;
+}
+
+.toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust as needed */
+      left: 0;
+      background-color: #ffffff;
+      width: 100%;
+      padding: 20px;
+  }
+}
+  .menu.open {
+      display: flex;
+  }
+
+  .menu li {
+      margin: 10px 0;
+  }
+
+  .icons {
+      display: none;
+  }
+
+
+
+/* Styling for icon links */
+.icons .icon {
+  color: rgb(229, 255, 0); /* Default color */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.icons .icon:hover {
+  color: #ffcc00; /* Color change on hover */
+}
+
+/* Styling for menu links */
+.menu li a:hover {
+  color: #ffcc00; /* Color change on hover */
+}
+
+/* Styling for home link */
+.home {
+  color: #ffcc00; /* Home link color */
+}
+
+/* Hover effect for icon links */
+.icons i:hover {
+  cursor: pointer;
+  color: #ffcc00;
+}
+
+/* Link styling */
+a {
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  text-decoration: none;
+  color: #2c2c2cb4;
+}
+
+.added-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-card {
+  width: 100px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+}
+
+.image-card button {
+  margin-top: 5px;
+}
+
+.container .mt-4{
+  position: static;
+}
+
+
+
+
+
+
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the navbar full width */
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: yellow;
+}
+
+.menu li .home{
+  color: yellow;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons i {
+  cursor: pointer;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding: 5px;
+}
+
+
+
+
+.open .menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Adjust this value to your preference */
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  gap: 10px;
+}
+
+.added-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  overflow-x: auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.image-card {
+  position: relative;
+}
+
+.image-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-card button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background-color: transparent;
+  color: #ff0000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.image-card button:hover {
+  color: #dd0000;
+}
+
+.added {
+  color: #007bff;
+}
+
+
+.welcome-hero-img img{
+  margin-top: 116px;
+  max-width: 76px;
+  height: auto;
+}
+
+
+.toggle {
+  display: none; /* Hide toggle button by default */
+  position: fixed;
+  top: 20px; /* Adjust the position as needed */
+  right: 20px; /* Adjust the position as needed */
+  z-index: 1000;
+}
+
+.toggle.show {
+  display: flex; /* Show toggle button when the 'show' class is applied */
+}
+
+
+/* Toggle Icon */
+.toggle-icon {
+  color: black; /* Set icon color to black */
+}
+
+
+
+
+.m-3 {
+  margin: 1rem!important;
+  color: black;
+}

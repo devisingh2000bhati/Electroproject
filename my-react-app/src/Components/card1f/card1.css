@@ -1,0 +1,53 @@
+/* Default styles */
+.card-img-top {
+    width: 100%; /* Adjust width for responsiveness */
+    text-align: center;
+    padding: 0 9px;
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+.card {
+    position: relative; /* Required for hover effect */
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+.card:hover h4 {
+    color: yellow; /* Change color on hover */
+}
+
+h4 {
+    margin-top: 10px; /* Adjust margin */
+    text-align: center;
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) { /* Medium devices (tablets), 768px and up */
+    .card-img-top {
+        width: 45%; /* Adjusted width for medium devices */
+        padding: 10px 9px;
+        padding-left: 96px;
+        margin-left: 46px;
+    }
+}
+
+@media (min-width: 992px) { /* Large devices (laptops/desktops), 992px and up */
+    .card-img-top {
+        width: 52%; /* Adjusted width for large devices */
+        padding: 10px 9px;
+        padding-left: 96px;
+        margin-left: 46px;
+    }
+}
+
+/* For phones (less than 768px) */
+@media (max-width: 767.98px) {
+    .card-img-top {
+        width: 100%; /* Adjusted width for phones */
+        padding: 0 9px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+

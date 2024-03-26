@@ -1,0 +1,157 @@
+.carousel-inner {
+  position: relative;
+}
+
+.item {
+  display: none;
+  text-align: center;
+}
+
+.item.active {
+  display: block;
+}
+
+.single-slide-item {
+  position: relative;
+}
+
+.welcome-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.welcome-hero-txt {
+  text-align: left;
+}
+
+.welcome-hero-txt h4,
+.welcome-hero-txt h2 {
+  margin: 0;
+}
+
+.packages-price {
+  margin-top: 20px;
+}
+
+.packages-price p {
+  margin: 0;
+}
+
+.welcome-hero-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.slide {
+  position: relative;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially hide the content */
+  transition: opacity 0.3s ease;
+}
+
+.slide:hover .slide-content {
+  opacity: 1; /* Show the content on hover */
+}
+
+.slide-content h4,
+.slide-content h2,
+.slide-content p {
+  margin: 0;
+}
+
+.packages-price {
+  margin-top: 10px;
+}
+
+.btn-cart {
+  margin-top: 10px;
+  padding: 10px 20px;
+
+  color: #0c0b0b;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cart:hover {
+  background-color: #f8efef; 
+  border: 2px solid orange;
+}
+
+.fade-in {
+  animation: fadeInAnimation 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the jump height */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to text elements with the jump-text class */
+.jump-text:hover {
+  animation: jump 0.5s ease;
+  color: #f0ec0c; /* Default color */
+  transition: color 0.3s ease;
+}
+
+
+.custom-yellow {
+  background-color:orange;
+  color: black; /* Adjust text color as needed */
+}

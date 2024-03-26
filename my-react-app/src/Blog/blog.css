@@ -1,0 +1,31 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container h1{
+
+    text-align: center;
+    margin-left: 39%;
+
+}
+
+
+.company-card {
+    width: calc(29% - 40px);
+}
+
+.blog-img {
+    width: 100%;
+  }
+p{
+    color: black;
+}  
+
+/* blog.css */
+.black-text {
+    color: black;
+  }
+  .text-black {
+    color: black;
+  }

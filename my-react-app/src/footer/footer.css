@@ -1,0 +1,122 @@
+/* Default styles */
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-social a {
+    color: #000000;
+    margin-right: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer .footer-social {
+        margin-top: 20px;
+        font-size: 22px;
+    }
+}
+
+
+.hm-foot-menu ul li a:hover {
+    color: #ff0000; /* Change color on hover */
+    /* Add any other hover effects here */
+  }
+  
+  .animated-text:hover {
+    animation: shake 0.5s ease; /* Example shake animation */
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+  }
+  .hm-foot-menu ul {
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  .hm-foot-menu ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    list-style: none;
+    text-decoration: none;
+    
+  }
+
+
+  .hm-foot-email {
+    display: flex;
+    align-items: center;
+  }
+  
+  .foot-email-box {
+    flex: 1;
+  }
+  
+  .foot-email-subscribe {
+    margin-left: 10px; /* Adjust as needed */
+  }
+  
+  .foot-email-subscribe span:hover {
+    transform: scale(1.2); 
+    color: darkgoldenrod;
+  }
+  
+
+
+  .ok{
+    text-align: center;
+    margin-left: 320px;
+  }
+
+
+  .footer-social{
+    margin-left: 227px;
+  }
+
+  .scroll-top-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .scroll-top-icon {
+    font-size: 24px; /* Adjust the size as needed */
+    color: #000; /* Set the default color */
+    cursor: pointer;
+  }
+  
+  .scroll-top-icon:hover {
+    color: #ff0000; /* Change color on hover */
+  }
+  
+
+  .m-3 {
+    margin: 1rem!important;
+    color: black;
+}
+
+.ok{
+  color: #000;
+  text-align: center;
+  margin-left: 320px;
+}
+
+
